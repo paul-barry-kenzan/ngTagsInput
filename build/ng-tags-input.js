@@ -5,7 +5,7 @@
  * Copyright (c) 2013-2015 Michael Benford
  * License: MIT
  *
- * Generated at 2015-12-15 14:34:29 -0500
+ * Generated at 2015-12-15 14:50:28 -0500
  */
 (function() {
 'use strict';
@@ -234,8 +234,8 @@ tagsInput.directive('tagsInput', ["$timeout", "$document", "$window", "tagsInput
                 var input = $element.find('input');
 
                 return {
-                    addTag: function(tag) {
-                        return $scope.tagList.add(tag);
+                    addTag: function(tag, trigger) {
+                        return $scope.tagList.add(tag, trigger);
                     },
                     focusInput: function() {
                         input[0].focus();
